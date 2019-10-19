@@ -1,0 +1,53 @@
+{
+  "name": "bitcoin-api",
+  "version": "1.0.0",
+  "description": "test bitcoin api",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/ 3005 dev",
+    "prod": "tsc && node dist 3005 prod",
+    "build": "tsc",
+    "test": "mocha -r ts-node/register tests/**/*.spec.ts",
+    "doc": "tsc && jsdoc -c jsdoc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivan456/bitcoin-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivan456/bitcoin-api/issues"
+  },
+  "homepage": "https://github.com/Ivan456/bitcoin-api#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.3",
+    "@types/koa": "^2.0.51",
+    "@types/koa-router": "^7.0.42",
+    "@types/koa-static": "^4.0.1",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "jsdoc": "^3.6.3",
+    "mocha": "^6.2.2",
+    "nodemon": "^1.19.4",
+    "ts-node": "^8.4.1",
+    "tsc": "^1.20150623.0",
+    "tslint": "^5.20.0",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-logger": "^3.1.1",
+    "@types/request-promise-native": "^1.0.17",
+    "koa": "^2.10.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.1",
+    "koa-openapi": "^3.13.5",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7",
+    "tslint-jsdoc-rules": "^0.2.0"
+  }
+}

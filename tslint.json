@@ -1,0 +1,66 @@
+{
+  "extends": [
+    "tslint-config-airbnb"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "cache/**/*",
+      "dist/**/*",
+      "doc/**/*",
+      "**/node-modules/**/*"
+    ]
+  },
+  "rules": {
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "trailing-comma": false,
+    "triple-equals": false,
+    "no-angle-bracket-type-assertion": false,
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type",
+      "check-preblock"
+    ],
+    "one-line": true,
+    "no-string-literal": false,
+    "no-var-requires": false,
+    "no-bitwise": false,
+    "no-string-throw": false,
+    "interface-name": true,
+    "max-classes-per-file": [
+      true,
+      1
+    ],
+    "max-line-length": [
+      true,
+      180
+    ],
+    "no-namespace": false,
+    "array-type": [
+      true,
+      "array"
+    ],
+    "prefer-array-literal": [
+      true,
+      {
+        "allow-type-parameters": true
+      }
+    ],
+    "ter-arrow-parens": [
+      true,
+      "as-needed"
+    ],
+    "no-increment-decrement": [
+      true,
+      "allow-post"
+    ],
+    "align": [true, "parameters"],
+    "jsdoc-require": [
+      true
+    ]
+  }
+}
